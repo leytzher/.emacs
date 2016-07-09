@@ -1,5 +1,3 @@
-
-
 ;;; Set up SLIME
 (load (expand-file-name "~/quicklisp/slime-helper.el"))
 (setq inferior-lisp-program "/usr/local/bin/sbcl")
@@ -37,6 +35,12 @@
 (put 'eval-expression 'disabled nil)
 
 
+;; Add line numbering
+(add-hook 'prog-mode-hook 'linum-mode)
 
 
-
+;; Use Lisp editing mode in files *.lisp, *.lsp and *.cl
+(set-default 'auto-mode-alist (append '(("\\.lisp$" . lisp-mode)
+					("\\.lsp$" . lisp-mode)
+					("\\.cl$" . lisp-mode))
+				      auto-mode-alist))
