@@ -11,7 +11,9 @@ Last update 8th July 2016.
   - Some key bindings.
   - Line numbering
   - Lisp Editing mode for files ending in *.lisp, *.lsp and *.cl
+  - IRC client via ERC
+  - Stock-ticker
   
   
 ### Version
-1.0.1
+1.0.2
